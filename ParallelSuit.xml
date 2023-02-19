@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParallelSuite">
+  <test parallel="classes"  thread-count="3" name="Test">
+    <classes>
+      <class name="package1.Test_Verify_Login_Functionality"/>
+      <class name="package1.Test_Verify_Leave_Functionality"/>
+      <class name="package1.Test_Verify_Moving_To_Admin"/>
+      <class name="package1.Test_Verify_System_User_Functionality"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
